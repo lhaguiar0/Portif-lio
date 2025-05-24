@@ -1,0 +1,110 @@
+body{ background-image: linear-gradient(to bottom, black);
+font-family:'Times New Roman', Times, serif;
+color: white;
+margin-left: 2%;
+margin-right: 2%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+td, tr{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid;
+    border-color: white;
+    
+    color: black;
+background-color: azure;
+
+}
+.linha1{
+    text-align: center;
+    background-color:blueviolet;
+color: white;}
+.card{
+    background-color: black;
+    width: 800px;
+    height: auto;
+    overflow: hidden;
+}
+
+/* Define o layout do menu como horizontal e centralizado */
+.menu-hover {
+    display: flex;            /* Organiza os itens da lista em linha (layout flexível) */
+    gap: 40px;                /* Define o espaçamento entre os itens do menu */
+    list-style: none;         /* Remove os marcadores padrão dos <li> */
+    background-color: #fff;   /* Define a cor de fundo como branca */
+    padding: 10px 20px;       /* Adiciona espaço interno (vertical de 10px, horizontal de 20px) */
+    justify-content: center;  /* Centraliza os itens horizontalmente dentro do menu */
+}
+
+/* Estiliza os links do menu */
+.menu-hover a {
+    text-decoration: none;    /* Remove o sublinhado padrão dos links */
+    color: #333;              /* Define a cor do texto como cinza escuro */
+    position: relative;       /* Necessário para posicionar o pseudo-elemento ::after em relação ao link */
+    padding: 5px;             /* Espaço interno ao redor do texto do link */
+    transition: color 0.3s ease; /* Transição suave na mudança de cor (caso seja adicionada futuramente) */
+}
+
+/* Cria uma linha animada ao passar o mouse (pseudo-elemento ::after) */
+.menu-hover a::after {
+    content: '';              /* Cria um conteúdo vazio para o pseudo-elemento */
+    position: absolute;       /* Posicionamento absoluto em relação ao link */
+    bottom: 0;                /* Alinha o pseudo-elemento na parte inferior do link */
+    left: 0;                  /* Começa do lado esquerdo */
+    width: 0%;                /* A linha começa com 0% de largura (invisível) */
+    height: 2px;              /* Altura da linha */
+    background-color: #0099ff; /* Cor azul da linha */
+    transition: width 0.3s ease; /* Transição suave no crescimento da linha */
+}
+
+/* Faz a linha crescer até 100% ao passar o mouse */
+.menu-hover a:hover::after {
+    width: 100%;              /* A linha se expande horizontalmente sob o link */
+}
+.camisa-roxa{
+    width:490px ;
+    height: auto;
+    border-radius:400px;
+    border: solid  2px white
+    
+    ;
+    
+}
+.div-foto{
+    display: flex;
+   background-color: rgba(255, 255, 255, 0.219);
+    justify-content: center;
+    
+}
+h3,h1, h2{
+    text-align: center;
+    background-image: linear-gradient(rgb(95, 90, 90),rgba(131, 127, 127, 0.438));
+    border-radius: 100px 15px;
+    color: #fff6f6;
+}
+h3{
+    margin-top: 13px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+li{
+    font-size: 20px
+}
+h4{
+    color: rgb(253, 253, 253);
+}
+.softskills{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-around;
+}
+.minhas-softs{
+    background-image: linear-gradient(rgb(76, 74, 77), rgb(63, 63, 63),white);
+    padding: 50px 30px 50px 30px;
+}
